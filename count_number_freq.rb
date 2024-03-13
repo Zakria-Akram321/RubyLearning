@@ -10,3 +10,4 @@ for i in arr do
 end
 
 puts hash
+puts abc
