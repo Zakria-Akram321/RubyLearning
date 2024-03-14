@@ -4,7 +4,7 @@ hash = {
   bear: "ursine"
 }
 
-puts hash.length # prints the length of hash
+puts hash.length #prints the length of hash
 puts hash[:dog] #prints the value of dog(key)
 
 data = {
