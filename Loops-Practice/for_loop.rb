@@ -1,28 +1,37 @@
 arr = [1,2,3,4,5]
 
 #Simple for loop
+puts "Simple for loop:"
 for i in arr 
-  puts i
+  print "#{i} , "
 end
+puts
 
 #Incrementing for loop
-for i in 1..arr.length() do
-  puts arr[i]
+puts "Incrementing for loop:"
+for i in 0..arr.length()-1 do
+  print "#{arr[i]}, "
 end
+puts
 
 #Decrementing for loop
+puts "Decrementing for loop:"
 for i in 5.downto(1)
-  puts i
+  print "#{i}, "
 end
+puts
 
 #For loop with incrementing step size
+puts "For loop with incrementing steps:"
 for i in 1.step(5,2)
-  puts(i)
+  print("#{i}, ")
 end
+puts
 
 #For loop with decrementing step size
+puts "For loop with decrementing step size:"
 for i in 5.step(1,-2)
-  puts(i)
+  print("#{i}, ")
 end
 
 arr_gpt = ["apple", "banana", "cherry"]
@@ -32,7 +41,6 @@ arr_gpt = ["apple", "banana", "cherry"]
 arr_gpt.each do |fruit|
   print "#{fruit}, "
 end
-
 puts
 
 #If you need the index as well as the value, you can use the each_with_index method.
@@ -57,7 +65,6 @@ puts squared_numbers.inspect
 even_numbers = numbers.select do |number|
   number.even?
 end
-
 puts even_numbers.inspect
 
 # --> reduce/inject (Aggregating)
@@ -65,7 +72,6 @@ puts even_numbers.inspect
 sum = numbers.reduce do |total, number|
   total + number
 end
-
 puts sum
 
 
