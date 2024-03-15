@@ -33,3 +33,20 @@ transaction.transfer(1000)
 
 puts savings.balance
 puts current.balance
+
+
+class Batman
+  def who_is_robin
+    puts "Dick Grayson"
+  end
+
+  def who_is_robin
+    puts "Damian Wayne"
+  end
+end
+
+batman = Batman.new()
+# batman.who_is_robin
+
+
+
