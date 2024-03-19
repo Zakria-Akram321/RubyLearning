@@ -68,7 +68,7 @@ end
 puts even_numbers.inspect
 
 # --> reduce/inject (Aggregating)
-#The reduce or inject method combines all elements of an array into a single value
+# The reduce or inject method combines all elements of an array into a single value
 sum = numbers.reduce do |total, number|
   total + number
 end
