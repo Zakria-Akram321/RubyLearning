@@ -31,9 +31,16 @@ end
 class DefinedStatus < Status
   def to_s = "defined"
   
+  @@abc = 0
+  
   def chatty_string = "I have not even started."
+
+  def self.abc 
+    @@abc
+  end
 end
 
 task = Status.new
 task.status = "defined"
 puts Status.for(task.status).chatty_string
+puts DefinedStatus.abc
