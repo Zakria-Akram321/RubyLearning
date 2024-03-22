@@ -67,25 +67,27 @@ cat = Cat.new
 cat.make_sound
 
 #Seperate string on the bases of delimeter
-module SeperateString
-  def new_from_string(string, delimter=",")
-    new(*string.split(delimter))
+module SeparateString
+  def new_from_string(string, delimiter=",")
+    new(*string.split(delimiter))
   end
 end
 
 class Person 
-  extend SeperateString
+  extend SeparateString
 
   def initialize(first_name, last_name)
     @first_name = first_name
     @last_name = last_name
   end
 
-  def full_name = "#{@first_name}, #{last_name}"
+  def full_name 
+    "#{@first_name}, #{@last_name}"
+  end
 end
 
-person = Person.new("Joey,Tribiani")
-person2 = Person.new("Ross|Geller", "|")
+person = Person.new_from_string("Joey,Tribiani")
+person2 = Person.new_from_string("Ross|Geller", "|")
 
 puts person.full_name
 puts person2.full_name
